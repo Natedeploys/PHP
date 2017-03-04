@@ -1,2 +1,2 @@
 # PHP
-Short, direct and explained Code examples for Portfolio purposes.
+Short, direct and explained Code examples for Portfolio & Reference purposes.
