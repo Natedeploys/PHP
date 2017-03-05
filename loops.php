@@ -3,6 +3,12 @@
 $currentYear = date('Y');
 $year = $currentYear - 100;
 
+//The for loop with all the conditions given
+for ($year = date('Y') - 99; $year <= date('Y'); $year++) {
+    echo $year ."\n";
+}
+
+
 //Create an array
 $learn = array("Conditionals", "arrays", "loops");
 //Add an element at the last position on the array
@@ -13,6 +19,14 @@ array_push($learn, "functions", "forms", "objects");
 array_unshift($learn, "HTML", "CSS");
 //sorts the array by values alpha numerically, arsort for reverse
 asort($learn);
+
+//Set i to 0, while i is less than total elements in learn
+//run the loop and then increment i by 1
+for ($i = 0; $i < count($learn); $i++) {
+    echo $learn[$i] ."\n"; //Print the value by using incrementing key
+}
+
+
 
 //List assigns variables as if they were an array.
 //Each returns the current key and value pair from an
@@ -48,7 +62,6 @@ while (++$year <= $currentYear) {
 //Do while loop
 do {
     echo $year . "\n";
-} while (++$year <= $currentYear);*/
-
+} while (++$year <= $currentYear);
 
 ?>
